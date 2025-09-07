@@ -51,19 +51,15 @@ Walmart operates 45 stores across the US and faces challenges due to unforeseen 
 
 **Store Insights:**
 
-Store with maximum sales: #20
-
-Store with minimum sales: #33
-
-Store with highest standard deviation: #14
-
-Store with best quarterly growth in Q3 2012: #4
+- Store with maximum sales: #20
+- Store with minimum sales: #33
+- Store with highest standard deviation: #14
+- Store with best quarterly growth in Q3 2012: #4
 
 **Holiday Insights:**
 
-Sales increased during Thanksgiving, decreased during Christmas.
-
-Identified holidays with sales above the non-holiday mean.
+- Sales increased during Thanksgiving, decreased during Christmas.
+- Identified holidays with sales above the non-holiday mean.
 
 **Model Performance:**
 
