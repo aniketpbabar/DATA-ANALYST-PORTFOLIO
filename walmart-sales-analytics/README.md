@@ -1,44 +1,77 @@
-# Retail Analysis with Walmart Data
+# Walmart Sales Analytics Project
+**Predicting Sales & Forecasting Demand for Walmart Stores**
 
-1. [Project Motivation](#ProjectMotivation)
-2. [Installation](#installation)
-3. [Data](#data)
-4. [Implementation](#model)
-5. [Results](#results)
+## Problem
 
-## 1. Project Motivation <a name="ProjectMotivation"></a> 
+Walmart operates 45 stores across the US and faces challenges due to unforeseen demand fluctuations. Sales are impacted by holidays, promotions, and economic factors such as CPI and unemployment. The main objectives of this project are:
 
-**In this project we focused retail analysis with Walmart data and answer the following questions:**
-1. Which stores have maximum  and sales?
-2. Which store has maximum standard deviation i.e., the sales vary a lot?. Also, find out the coefficient of mean to standard deviation.
-3. Which store/s has good quarterly growth rate in Q3’2012?
-4. Find out holidays which have higher sales than the mean sales in non-holiday season for all stores together.
-5. Provide a monthly and semester view of sales in units and give insights.
-6. Build prediction to forecast demand.
+1. Identify stores with maximum and minimum sales.
+2. Determine stores with high sales variability (standard deviation) and compute the coefficient of mean to standard deviation.
+3. Analyze quarterly growth rates, especially in Q3 2012.
+4. Investigate holidays with higher or lower than average sales.
+5. Provide monthly and semester sales insights.
+6. Build prediction models to forecast demand accurately, assisting Walmart in planning and inventory management.
 
+## Approach
 
+**1. Data Understanding & Cleaning**
 
-## 2. Installation <a name="installation"></a>
+- Loaded historical sales data for 45 stores (2010–2012).
+- Checked for missing values and data types.
+- Created additional columns for Day, Month, and Year.
 
-- Python versions 3.*.
-- Python Libraries:
-    - sklearn.
-    - Pandas.
-    - numpy.
-    - seaborn
-    - matplotlib.
-    - datetime.
+**2. Exploratory Data Analysis (EDA)**
 
-## 3. Data<a name="data"></a> 
+- Identified stores with minimum and maximum total sales.
+- Calculated standard deviation and coefficient of variation for each store.
+- Analyzed quarterly growth rates to find high-performing stores.
+- Investigated the impact of holidays (Super Bowl, Labour Day, Thanksgiving, Christmas) on sales.
+- Provided monthly, semester, and yearly sales insights with visualizations.
 
-There are sales data available for 45 stores of Walmart in [Kaggle](https://www.kaggle.com/aditya6196/retail-analysis-with-walmart-data). This is the data that covers sales from 2010-02-05 to 2012-11-01. 
+**3. Feature Engineering & Outlier Handling**
 
+- Detected outliers in features such as Temperature, Fuel_Price, CPI, and Unemployment.
+- Filtered out extreme outliers to improve model performance.
 
+**4. Modeling & Forecasting**
 
-## 4. Implementation <a name="model"></a> 
-In this project, we used [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) and [LinearRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html) to predict of sales. The data have been split into training and testing with a ratio of 80:20.
+- Selected features: Store, Fuel_Price, CPI, Unemployment, Day, Month, Year.
+- Target variable: Weekly_Sales.
+- Split data into training and testing sets (80:20).
+- Implemented Linear Regression and Random Forest Regressor.
+- Evaluated models using R² score, MAE, MSE, RMSE, and visualized predicted vs actual sales.
 
+## Tools & Libraries
 
+- Python Libraries: pandas, numpy, matplotlib, seaborn, datetime
+- Machine Learning: scikit-learn (Linear Regression, Random Forest Regressor)
+- Visualization: Matplotlib, Seaborn
 
-## 5. Result<a name="results"></a>
-The details of the results show in the code.
+## Impact & Results
+
+**Store Insights:**
+
+Store with maximum sales: #20
+
+Store with minimum sales: #33
+
+Store with highest standard deviation: #14
+
+Store with best quarterly growth in Q3 2012: #4
+
+**Holiday Insights:**
+
+Sales increased during Thanksgiving, decreased during Christmas.
+
+Identified holidays with sales above the non-holiday mean.
+
+**Model Performance:**
+
+- Model	Accuracy             (%)	  MAE        RMSE
+- Linear Regression        	13	    469,136	    568,758
+- Random Forest Regressor	94.37	72,406	    144,281
+
+**Business Impact:**
+
+- Provided actionable insights for Walmart to optimize inventory and reduce stockouts.
+- Forecasting model can guide promotional planning and holiday demand management.
