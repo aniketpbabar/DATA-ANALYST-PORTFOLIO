@@ -46,10 +46,6 @@ Each record in the dataset is related to a specific aggregated slice of the unde
 
 ## Question and Solution
 
-Please join me in executing the queries using PostgreSQL on [DB Fiddle](https://www.db-fiddle.com/f/jmnwogTsUE8hGqkZv9H7E8/8). It would be great to work together on the questions!
-
-If you have any questions, reach out to me on [LinkedIn](https://www.linkedin.com/in/katiehuangx/).
-
 ## 🧼 A. Data Cleansing Steps
 
 In a single query, perform the following operations and generate a new table in the `data_mart` schema named `clean_weekly_sales`:
