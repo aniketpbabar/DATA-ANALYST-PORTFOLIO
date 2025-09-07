@@ -27,5 +27,4 @@
 - Monitor Sales Performance: Track sales metrics across regions and periods.
 - Analyze Customer Behavior: Understand purchasing patterns and segmentation.
 - Data-Driven Decisions: Support marketing, inventory, and strategic planning.
-
-Operational Efficiency: Unified view of data reduces manual reporting efforts.
+- Operational Efficiency: Unified view of data reduces manual reporting efforts.
