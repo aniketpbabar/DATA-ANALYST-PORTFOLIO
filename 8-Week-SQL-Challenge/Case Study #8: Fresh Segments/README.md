@@ -59,10 +59,6 @@ Danny has asked for your assistance to analyse aggregated metrics for an example
 
 ## Question and Solution
 
-Please join me in executing the queries using PostgreSQL on [DB Fiddle](https://www.db-fiddle.com/f/jmnwogTsUE8hGqkZv9H7E8/17). It would be great to work together on the questions!
-
-If you have any questions, reach out to me on [LinkedIn](https://www.linkedin.com/in/katiehuangx/).
-
 ## 🧼 A. Data Exploration and Cleansing
 
 **1. Update the `fresh_segments.interest_metrics` table by modifying the `month_year` column to be a `date` data type with the start of the month**
@@ -339,5 +335,3 @@ The `index_value` is a measure which can be used to reverse calculate the averag
 5. Provide a possible reason why the max average composition might change from month to month? Could it signal something is not quite right with the overall business model for Fresh Segments?
 
 ***
-
-Do give me a 🌟 if you like what you're reading. Thank you! 🙆🏻‍♀️
